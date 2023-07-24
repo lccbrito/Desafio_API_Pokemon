@@ -1,0 +1,160 @@
+@font-face {
+  font-family: 'PokemonSolid';
+  src: url('src/fonts/PokemonSolid.ttf') format('truetype'); /* Substitua o caminho da fonte pelo caminho correto */
+}
+
+body {
+  font-family: 'Roboto Mono', monospace;
+  max-height: 540px;
+  background-color: #FEE8B8;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;    
+}
+
+.titulo, .nomePokemon, .pokemon-types {
+  font-family: 'PokemonSolid', 'Roboto Mono', monospace;
+  letter-spacing: 3px;
+}
+
+.titulo, #loading {  
+  font-weight: bold;
+  color: #006DB8;
+  font-size: 20px;
+}
+
+.top-image {
+  text-align: center;
+  margin-bottom: 16px;
+}
+
+.top-image img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 40%;
+}
+
+.pokemon-card {
+  border-radius: 8px;
+  padding: 16px;
+  text-align: center;
+}
+
+.pokemon-image {
+  position: relative;	
+	height: 230px;
+	width: 230px;
+	margin: auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;  
+	box-shadow: 0 3px 15px rgba(100, 100, 100, 0.5);
+	border-radius: 20px;
+}
+
+.pokemon-image img {
+  margin-top: 10px;
+  width: 160px;
+  height: 160px;
+  filter: contrast(100%);
+}
+
+.circle {
+	padding: 65px;
+	position: absolute;
+	background: rgba(255, 255, 255, 0.3);
+	border-radius: 50%;
+  height: 35%;
+  width: 38%;
+}
+
+
+.pokemon-types {
+  font-size: 16px;
+  font-weight: bold;
+  margin-bottom: 16px;
+}
+
+input {
+  width: 60px;
+  height: 25px;
+  font-size: 16px;
+  border: 2px solid #006DB8;
+  color: #006DB8;
+  background: #f2f2f2;
+  margin-left: 5px;
+  outline: none;
+}
+
+#att {
+  background-color: #FFCC00;
+  border: solid;
+  border-color: #006DB8;
+  color: #006DB8;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+#att:hover {
+  background-color: #0056b3;
+  color: #FFCC00;
+}
+
+.loading-spinner {
+  text-align: center;
+  margin: 20px auto;
+  size: 35;
+}
+
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 20vh;
+}
+
+#tituloList {
+  text-align: center;
+  background-color: #FFCC00;
+  border: solid;
+  border-color: #006DB8;
+  color: #006DB8;
+  font-weight: bold;
+  font-size: 20px;
+  padding: 5px;
+  margin-top: 10px;
+}
+
+.lista {
+  text-align: center;
+  width: 250px; /* largura da divisória */
+  height: 2px; /* altura da divisória */
+  font-weight: bold;
+  justify-content: center;
+}
+
+ul {
+  list-style: none;
+  flex-wrap: wrap;
+}
+
+li {
+  display: flex;
+  align-items: center;
+  width: 400px; /* tamanho para cada card */
+}
+
+#imgdd {
+  width: 15%;
+  height: auto;
+
+}
+
+.number {
+  margin: 10px;
+  color: #006DB8;
+}
